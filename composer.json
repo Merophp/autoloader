@@ -1,0 +1,21 @@
+{
+  "name": "merophp/autoloader",
+  "description": "Simple PSR-4 autoloader",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robert Becker",
+      "role": "Lead"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"Merophp\\Autoloader\\": "src/"}
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "mockery/mockery": "^1.4"
+  }
+}
