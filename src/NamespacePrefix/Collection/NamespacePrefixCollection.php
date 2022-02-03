@@ -5,6 +5,7 @@ use Merophp\Autoloader\NamespacePrefix\NamespacePrefix;
 
 use IteratorAggregate;
 use ArrayIterator;
+use Traversable;
 
 class NamespacePrefixCollection implements IteratorAggregate
 {
@@ -41,9 +42,9 @@ class NamespacePrefixCollection implements IteratorAggregate
     }
 
     /**
-     * @return ArrayIterator
+     * @return Traversable
      */
-    public function getIterator(): ArrayIterator
+    public function getIterator(): Traversable
     {
         return new ArrayIterator($this->namespacePrefixes);
     }
